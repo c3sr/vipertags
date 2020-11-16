@@ -71,7 +71,7 @@ func TestDefaults(t *testing.T) {
 	}
 	c := StringConfig{}
 	Setup("yaml", "CONF") // Or Setup("json")
-	SetDefault(&c)
+	SetDefaults(&c)
 	assert.Equal(t, "foo", c.FromEnv1, "")
 }
 
